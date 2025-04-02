@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#E2ECE9" stroke="#A9D6E5" stroke-width="2"/>
+    
+    <!-- Exercise Icon (Running Figure) -->
+    <circle cx="30" cy="15" r="5" fill="#CDB4DB"/>
+    <path d="M25 25L30 35L35 30L40 40" stroke="#CDB4DB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 35L25 25L30 22" stroke="#CDB4DB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="15" y1="45" x2="45" y2="45" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+</svg>

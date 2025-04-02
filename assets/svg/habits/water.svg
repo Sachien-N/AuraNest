@@ -1,0 +1,15 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#A9D6E5" stroke="#A9D6E5" stroke-width="2"/>
+    
+    <!-- Water Glass -->
+    <path d="M20 15H40L37 45H23L20 15Z" fill="#F0E6EF" stroke="#CDB4DB" stroke-width="2"/>
+    
+    <!-- Water Level -->
+    <path d="M22 30H38L36 45H24L22 30Z" fill="#E0F5FF" stroke="#CDB4DB" stroke-width="1.5"/>
+    
+    <!-- Water Drops -->
+    <circle cx="25" cy="22" r="2" fill="#E0F5FF"/>
+    <circle cx="35" cy="22" r="2" fill="#E0F5FF"/>
+    <circle cx="30" cy="25" r="2" fill="#E0F5FF"/>
+</svg>

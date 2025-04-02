@@ -1,0 +1,12 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#FFF1E6" stroke="#A9D6E5" stroke-width="2"/>
+    
+    <!-- Book Icon -->
+    <path d="M15 20V45C15 45 20 42 30 42C40 42 45 45 45 45V20C45 20 40 17 30 17C20 17 15 20 15 20Z" fill="#FAD4D4" stroke="#CDB4DB" stroke-width="2"/>
+    <path d="M30 17V42" stroke="#CDB4DB" stroke-width="2"/>
+    <path d="M20 22L25 22" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+    <path d="M20 27L25 27" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+    <path d="M35 22L40 22" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+    <path d="M35 27L40 27" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+</svg>

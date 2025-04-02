@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Badge Background -->
+    <circle cx="40" cy="40" r="36" fill="#E2ECE9" stroke="#A9D6E5" stroke-width="3"/>
+    
+    <!-- Inner Circle -->
+    <circle cx="40" cy="40" r="28" fill="#F0E6EF" stroke="#CDB4DB" stroke-width="2"/>
+    
+    <!-- Medal Shape -->
+    <path d="M40 15L45 25H35L40 15Z" fill="#FFCFD2" stroke="#CDB4DB" stroke-width="1.5"/>
+    <path d="M35 25H45V30C45 35.5228 40.5228 40 35 40H35V25Z" fill="#FFCFD2" stroke="#CDB4DB" stroke-width="1.5"/>
+    <path d="M45 25H35V30C35 35.5228 39.4772 40 45 40H45V25Z" fill="#FFCFD2" stroke="#CDB4DB" stroke-width="1.5"/>
+    
+    <!-- Medal Ribbon -->
+    <path d="M40 40V55" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+    <path d="M35 45L40 55L45 45" fill="#FFCFD2" stroke="#CDB4DB" stroke-width="1.5"/>
+    
+    <!-- Text Position (would be added via HTML/CSS) -->
+    <circle cx="40" cy="30" r="10" fill="#FFF1E6" stroke="#CDB4DB" stroke-width="1.5"/>
+</svg>

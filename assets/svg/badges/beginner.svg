@@ -1,0 +1,13 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Badge Background -->
+    <circle cx="40" cy="40" r="36" fill="#E0F5FF" stroke="#A9D6E5" stroke-width="3"/>
+    
+    <!-- Inner Circle -->
+    <circle cx="40" cy="40" r="28" fill="#F0E6EF" stroke="#CDB4DB" stroke-width="2"/>
+    
+    <!-- Star Shape -->
+    <path d="M40 20L44.5 33.5H58.5L47 42L51.5 55.5L40 47L28.5 55.5L33 42L21.5 33.5H35.5L40 20Z" fill="#FFCFD2" stroke="#CDB4DB" stroke-width="1.5"/>
+    
+    <!-- Text Position (would be added via HTML/CSS) -->
+    <circle cx="40" cy="40" r="12" fill="#FFF1E6" stroke="#CDB4DB" stroke-width="1.5"/>
+</svg>

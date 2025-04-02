@@ -1,0 +1,315 @@
+/* Journal Page Styles */
+
+/* Journal Container */
+.journal-container {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--primary-bg);
+    min-height: calc(100vh - 80px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Journal Header */
+.journal-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.journal-subtitle {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Journal Content */
+.journal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+/* New Entry Card */
+.new-entry-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.journal-form {
+    margin-top: var(--spacing-lg);
+}
+
+.journal-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Mood Selector */
+.mood-selector {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mood-emoji-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-sm);
+}
+
+.mood-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mood-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.mood-emoji {
+    font-size: 2rem;
+    transition: transform var(--transition-fast);
+    margin-bottom: var(--spacing-xs);
+    opacity: 0.5;
+}
+
+.mood-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    transition: transform var(--transition-normal);
+}
+
+.mood-option input[type="radio"]:checked + .mood-icon {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.mood-option:hover .mood-emoji {
+    transform: scale(1.1);
+}
+
+/* Past Entries */
+.past-entries {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.past-entries h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.entry-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: transform var(--transition-normal);
+}
+
+.entry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.entry-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.entry-mood {
+    font-size: 1.5rem;
+}
+
+.entry-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.entry-preview {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.entry-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.entry-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 0.9rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.entry-action-btn:hover {
+    background-color: var(--accent-blue);
+    color: var(--white);
+}
+
+/* Entry Detail Modal */
+.entry-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.entry-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.entry-modal-content {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    width: 90%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform var(--transition-normal);
+}
+
+.entry-modal.active .entry-modal-content {
+    transform: translateY(0);
+}
+
+.entry-modal-close {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background-color var(--transition-fast);
+}
+
+.entry-modal-close:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.entry-modal-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.entry-modal-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entry-modal-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.entry-modal-mood {
+    font-size: 1.5rem;
+}
+
+.entry-modal-content-text {
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .journal-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .new-entry-card {
+        order: 1;
+    }
+    
+    .past-entries {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mood-emoji {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .journal-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .new-entry-card,
+    .entry-card {
+        padding: var(--spacing-md);
+    }
+    
+    .mood-emoji-selector {
+        gap: var(--spacing-xs);
+    }
+    
+    .mood-emoji {
+        font-size: 1.5rem;
+    }
+    
+    .entry-modal-content {
+        padding: var(--spacing-lg);
+        width: 95%;
+    }
+}

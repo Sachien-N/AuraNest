@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#F0E6EF" stroke="#A9D6E5" stroke-width="2"/>
+    
+    <!-- Person Meditating -->
+    <circle cx="30" cy="22" r="7" fill="#CDB4DB"/>
+    <path d="M20 45C20 45 25 38 30 38C35 38 40 45 40 45" stroke="#CDB4DB" stroke-width="3" stroke-linecap="round"/>
+    <line x1="30" y1="29" x2="30" y2="38" stroke="#CDB4DB" stroke-width="3" stroke-linecap="round"/>
+    <path d="M18 35C18 35 22 32 30 32C38 32 42 35 42 35" stroke="#CDB4DB" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - AuraNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/journal.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/svg/logo-small.svg" alt="AuraNest Logo" width="40" height="40">
+                <span>AuraNest</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html" class="active">Journal</a></li>
+                <li><a href="affirmations.html">Affirmations</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user-menu">
+                <button class="btn btn-secondary btn-icon notifications-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <div class="user-profile">
+                    <img src="../assets/images/default-avatar.svg" alt="User Avatar" class="avatar">
+                    <span class="username">Sarah</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="journal-container">
+        <div class="container">
+            <section class="journal-header">
+                <h1>Gratitude Journal</h1>
+                <p class="journal-subtitle">Take a moment to reflect on the things you're grateful for today</p>
+            </section>
+
+            <section class="journal-content">
+                <div class="new-entry-card">
+                    <h2>New Entry</h2>
+                    <form id="journalForm" class="journal-form">
+                        <div class="form-group">
+                            <label for="entryDate" class="form-label">Date</label>
+                            <input type="date" id="entryDate" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="entryTitle" class="form-label">Title</label>
+                            <input type="text" id="entryTitle" class="form-input" placeholder="Give your entry a meaningful title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="entryContent" class="form-label">What are you grateful for today?</label>
+                            <textarea id="entryContent" class="form-input journal-textarea" rows="5" placeholder="Express your gratitude here..." required></textarea>
+                        </div>
+                        <div class="form-group mood-selector">
+                            <label class="form-label">How do you feel?</label>
+                            <div class="mood-emoji-selector">
+                                <label class="mood-option">
+                                    <input type="radio" name="mood" value="1">
+                                    <img src="../assets/svg/moods/sad.svg" alt="Sad mood" class="mood-icon">
+                                </label>
+                                <label class="mood-option">
+                                    <input type="radio" name="mood" value="2">
+                                    <img src="../assets/svg/moods/calm.svg" alt="Calm mood" class="mood-icon">
+                                </label>
+                                <label class="mood-option">
+                                    <input type="radio" name="mood" value="3" checked>
+                                    <img src="../assets/svg/moods/happy.svg" alt="Happy mood" class="mood-icon">
+                                </label>
+                                <label class="mood-option">
+                                    <input type="radio" name="mood" value="4">
+                                    <img src="../assets/svg/moods/happy.svg" alt="Very happy mood" class="mood-icon" style="transform: scale(1.2);">
+                                </label>
+                                <label class="mood-option">
+                                    <input type="radio" name="mood" value="5">
+                                    <img src="../assets/svg/moods/happy.svg" alt="Extremely happy mood" class="mood-icon" style="transform: scale(1.4);">
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large w-100">Save Entry</button>
+                    </form>
+                </div>
+
+                <div class="past-entries">
+                    <h2>Past Entries</h2>
+                    <div class="entries-filter">
+                        <input type="text" class="form-input search-input" placeholder="Search entries...">
+                        <select class="form-input filter-select">
+                            <option value="all">All Entries</option>
+                            <option value="week">This Week</option>
+                            <option value="month">This Month</option>
+                            <option value="year">This Year</option>
+                        </select>
+                    </div>
+                    <div id="entriesList" class="entries-list">
+                        <!-- Entries will be dynamically populated here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/journal.js"></script>
+</body>
+</html>

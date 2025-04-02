@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AuraNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/svg/logo-small.svg" alt="AuraNest Logo" width="40" height="40">
+                <span>AuraNest</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="affirmations.html">Affirmations</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user-menu">
+                <button class="btn btn-secondary btn-icon notifications-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <div class="user-profile">
+                    <img src="../assets/images/default-avatar.svg" alt="User Avatar" class="avatar">
+                    <span class="username">Sarah</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="dashboard-container">
+            <section class="dashboard-header">
+                <h1>Welcome back, Sarah!</h1>
+                <p class="daily-quote">"Every day is a new beginning. Take a deep breath, smile, and start again."</p>
+            </section>
+
+            <div class="dashboard-grid">
+                <section class="dashboard-card habit-tracker">
+                    <h2>Habit Tracker</h2>
+                    <div class="habit-list">
+                        <div class="habit-item">
+                            <div class="habit-check">
+                                <input type="checkbox" id="habit1" class="habit-checkbox">
+                                <img src="../assets/svg/habits/meditation.svg" alt="Meditation" class="habit-icon">
+                                <label for="habit1">Morning Meditation</label>
+                            </div>
+                            <div class="streak-counter">🔥 5 days</div>
+                        </div>
+                        <div class="habit-item">
+                            <div class="habit-check">
+                                <input type="checkbox" id="habit2" class="habit-checkbox">
+                                <img src="../assets/svg/habits/exercise.svg" alt="Exercise" class="habit-icon">
+                                <label for="habit2">Daily Exercise</label>
+                            </div>
+                            <div class="streak-counter">🔥 3 days</div>
+                        </div>
+                        <div class="habit-item">
+                            <div class="habit-check">
+                                <input type="checkbox" id="habit3" class="habit-checkbox">
+                                <img src="../assets/svg/habits/journal.svg" alt="Journal" class="habit-icon">
+                                <label for="habit3">Gratitude Journal</label>
+                            </div>
+                            <div class="streak-counter">🔥 7 days</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary add-habit-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Add New Habit
+                    </button>
+                </section>
+
+                <section class="dashboard-card mood-tracker">
+                    <h2>Today's Mood</h2>
+                    <div class="mood-selector">
+                        <input type="range" min="1" max="5" value="3" class="mood-slider">
+                        <div class="mood-display">
+                            <img src="../assets/svg/moods/happy.svg" alt="Happy mood" class="mood-icon current-mood">
+                        </div>
+                    </div>
+                    <div class="mood-labels">
+                        <span>Very Low</span>
+                        <span>Low</span>
+                        <span>Neutral</span>
+                        <span>Good</span>
+                        <span>Excellent</span>
+                    </div>
+                    <textarea class="mood-notes" placeholder="Add notes about your mood..."></textarea>
+                    <button class="btn btn-primary save-mood-btn">Save Mood</button>
+                </section>
+
+                <section class="dashboard-card challenges">
+                    <h2>Current Challenges</h2>
+                    <div class="challenge-list">
+                        <div class="challenge-item">
+                            <h3>7 Days of Meditation</h3>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 70%;"></div>
+                            </div>
+                            <span class="challenge-progress">5/7 days completed</span>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>30 Days of Gratitude</h3>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 40%;"></div>
+                            </div>
+                            <span class="challenge-progress">12/30 days completed</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dashboard-card daily-insight">
+                    <h2>Daily Insight</h2>
+                    <div class="insight-card">
+                        <p class="insight-text">"Take time to do what makes your soul happy. Sometimes the smallest step in the right direction ends up being the biggest step of your life."</p>
+                        <button class="btn btn-secondary refresh-insight-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.9 4.1C14.3 2.5 12.2 1.5 10 1.5C5.9 1.5 2.5 4.9 2.5 9C2.5 13.1 5.9 16.5 10 16.5C13.5 16.5 16.5 14 17.3 10.5H15.9C15.1 13.3 12.8 15.1 10 15.1C6.7 15.1 4 12.4 4 9C4 5.7 6.7 3 10 3C11.7 3 13.3 3.7 14.5 5L11 8.5H18.5V1L15.9 4.1Z" fill="currentColor"/>
+                            </svg>
+                            New Insight
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

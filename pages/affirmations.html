@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Affirmations - AuraNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/affirmations.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/svg/logo-small.svg" alt="AuraNest Logo" width="40" height="40">
+                <span>AuraNest</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="affirmations.html" class="active">Affirmations</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user-menu">
+                <button class="btn btn-secondary btn-icon notifications-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <div class="user-profile">
+                    <img src="../assets/images/default-avatar.svg" alt="User Avatar" class="avatar">
+                    <span class="username">Sarah</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="affirmations-container">
+        <div class="container">
+            <section class="affirmations-header">
+                <h1>Daily Affirmations</h1>
+                <p class="affirmations-subtitle">Nurture your mind with positive thoughts and empowering beliefs</p>
+            </section>
+
+            <section class="affirmations-content">
+                <div class="daily-affirmation">
+                    <h2>Today's Affirmation</h2>
+                    <div class="affirmation-card">
+                        <div class="affirmation-text" id="dailyAffirmation">
+                            Loading your daily affirmation...
+                        </div>
+                        <button class="btn btn-primary refresh-affirmation">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.9 4.1C14.3 2.5 12.2 1.5 10 1.5C5.9 1.5 2.5 4.9 2.5 9C2.5 13.1 5.9 16.5 10 16.5C13.5 16.5 16.5 14 17.3 10.5H15.9C15.1 13.3 12.8 15.1 10 15.1C6.7 15.1 4 12.4 4 9C4 5.7 6.7 3 10 3C11.7 3 13.3 3.7 14.5 5L11 8.5H18.5V1L15.9 4.1Z" fill="currentColor"/>
+                            </svg>
+                            New Affirmation
+                        </button>
+                    </div>
+                </div>
+
+                <div class="affirmations-categories">
+                    <h2>Affirmation Categories</h2>
+                    <div class="category-grid">
+                        <div class="category-card" data-category="self-love">
+                            <svg class="category-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="15" fill="#FAD4D4"/>
+                                <path d="M20 15C21.7 15 23 16.3 23 18C23 21 20 23 20 23C20 23 17 21 17 18C17 16.3 18.3 15 20 15Z" fill="#CDB4DB"/>
+                            </svg>
+                            <h3>Self-Love</h3>
+                            <p>Embrace your unique beauty and worth</p>
+                        </div>
+                        <div class="category-card" data-category="confidence">
+                            <svg class="category-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="15" fill="#F5E4C3"/>
+                                <path d="M20 25L25 20H22V15H18V20H15L20 25Z" fill="#A9D6E5"/>
+                            </svg>
+                            <h3>Confidence</h3>
+                            <p>Build unshakeable self-confidence</p>
+                        </div>
+                        <div class="category-card" data-category="growth">
+                            <svg class="category-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="15" fill="#CDB4DB"/>
+                                <path d="M15 25V20H18V17H21V14H25V25H15Z" fill="#FAD4D4"/>
+                            </svg>
+                            <h3>Growth</h3>
+                            <p>Embrace change and personal development</p>
+                        </div>
+                        <div class="category-card" data-category="gratitude">
+                            <svg class="category-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="15" fill="#A9D6E5"/>
+                                <path d="M20 15L22 19H25L22 22L23 26L20 24L17 26L18 22L15 19H18L20 15Z" fill="#F5E4C3"/>
+                            </svg>
+                            <h3>Gratitude</h3>
+                            <p>Cultivate appreciation and joy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-affirmations">
+                    <h2>Create Your Own Affirmation</h2>
+                    <form id="customAffirmationForm" class="affirmation-form">
+                        <div class="form-group">
+                            <label for="affirmationText" class="form-label">Your Affirmation</label>
+                            <textarea id="affirmationText" class="form-input" rows="3" placeholder="Write your personal affirmation here..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="affirmationCategory" class="form-label">Category</label>
+                            <select id="affirmationCategory" class="form-input" required>
+                                <option value="self-love">Self-Love</option>
+                                <option value="confidence">Confidence</option>
+                                <option value="growth">Growth</option>
+                                <option value="gratitude">Gratitude</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large w-100">Save Affirmation</button>
+                    </form>
+                </div>
+
+                <div class="saved-affirmations">
+                    <h2>Your Saved Affirmations</h2>
+                    <div id="savedAffirmationsList" class="saved-affirmations-list">
+                        <!-- Saved affirmations will be dynamically populated here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/affirmations.js"></script>
+</body>
+</html>

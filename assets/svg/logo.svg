@@ -1,0 +1,15 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Outer Circle -->
+    <circle cx="60" cy="60" r="54" stroke="#A9D6E5" stroke-width="6"/>
+    
+    <!-- Inner Circle (Representing Nest) -->
+    <path d="M60 30C71.598 30 81 39.402 81 51C81 62.598 71.598 72 60 72C48.402 72 39 62.598 39 51C39 39.402 48.402 30 60 30Z" fill="#CDB4DB"/>
+    
+    <!-- Curved Path (Representing Growth) -->
+    <path d="M60 84C73.2548 84 84 73.2548 84 60C84 46.7452 73.2548 36 60 36" stroke="#FAD4D4" stroke-width="6"/>
+    
+    <!-- Small Decorative Elements (Leaves/Petals) -->
+    <circle cx="45" cy="51" r="4" fill="#FFCFD2"/>
+    <circle cx="75" cy="51" r="4" fill="#FFCFD2"/>
+    <circle cx="60" cy="36" r="4" fill="#FFF1E6"/>
+</svg>

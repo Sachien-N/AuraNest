@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - AuraNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/achievements.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/svg/logo-small.svg" alt="AuraNest Logo" width="40" height="40">
+                <span>AuraNest</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="affirmations.html">Affirmations</a></li>
+                <li><a href="achievements.html" class="active">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user-menu">
+                <button class="btn btn-secondary btn-icon notifications-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <div class="user-profile">
+                    <img src="../assets/images/default-avatar.svg" alt="User Avatar" class="avatar">
+                    <span class="username">Sarah</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="achievements-container">
+        <div class="container">
+            <section class="achievements-header">
+                <h1>Your Achievements</h1>
+                <p class="achievements-subtitle">Track your growth and celebrate your progress</p>
+                <div class="achievement-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Badges Earned</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Current Streak</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Monthly Progress</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements-grid">
+                <div class="achievement-card unlocked" data-achievement="first_steps">
+                    <div class="achievement-icon">
+                        <img src="../assets/svg/badges/beginner.svg" alt="Beginner Badge" class="badge-icon" width="60" height="60">
+                    </div>
+                    <h3>First Steps</h3>
+                    <p>Complete your first week of daily meditation</p>
+                    <div class="achievement-date">Earned on May 15, 2024</div>
+                </div>
+
+                <div class="achievement-card unlocked" data-achievement="gratitude_master">
+                    <div class="achievement-icon">
+                        <img src="../assets/svg/badges/intermediate.svg" alt="Intermediate Badge" class="badge-icon" width="60" height="60">
+                    </div>
+                    <h3>Gratitude Master</h3>
+                    <p>Write 30 gratitude journal entries</p>
+                    <div class="achievement-date">Earned on May 10, 2024</div>
+                </div>
+
+                <div class="achievement-card" data-achievement="inner_peace">
+                    <div class="achievement-icon">
+                        <img src="../assets/svg/badges/advanced.svg" alt="Advanced Badge" class="badge-icon locked" width="60" height="60">
+                    </div>
+                    <h3>Inner Peace</h3>
+                    <p>Complete 50 meditation sessions</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 60%;"></div>
+                        </div>
+                        <span>30/50 sessions</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card" data-achievement="consistency_king">
+                    <div class="achievement-icon">
+                        <img src="../assets/svg/badges/intermediate.svg" alt="Intermediate Badge" class="badge-icon locked" width="60" height="60">
+                    </div>
+                    <h3>Consistency King</h3>
+                    <p>Maintain a 30-day streak in any habit</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 40%;"></div>
+                        </div>
+                        <span>12/30 days</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card" data-achievement="mood_master">
+                    <div class="achievement-icon">
+                        <img src="../assets/svg/badges/advanced.svg" alt="Advanced Badge" class="badge-icon locked" width="60" height="60">
+                    </div>
+                    <h3>Mood Master</h3>
+                    <p>Log your mood for 60 consecutive days</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 25%;"></div>
+                        </div>
+                        <span>15/60 days</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card" data-achievement="self_love_guru">
+                    <div class="achievement-icon">
+                        <img src="../assets/svg/badges/advanced.svg" alt="Advanced Badge" class="badge-icon locked" width="60" height="60">
+                    </div>
+                    <h3>Self-Love Guru</h3>
+                    <p>Create 100 positive affirmations</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 15%;"></div>
+                        </div>
+                        <span>15/100 affirmations</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/achievements.js"></script>
+</body>
+</html>
